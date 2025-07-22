@@ -24,7 +24,7 @@ app = Flask(__name__)
 def inicio():
     return jsonify({"mensaje": "✅ Servidor Flask funcionando correctamente"})
 
-# OCR desde Postman u otros servicios
+
 @app.route('/subir-imagen', methods=['POST'])
 def procesar_imagen():
     if 'imagen' not in request.files:
